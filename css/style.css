@@ -6,9 +6,14 @@
 
 - Font weights
 Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
 
 - Line heights
 Default: 1
+Small: 1.05
+Paragraph: 1.6
 
 --- 02 COLORS
 
@@ -23,6 +28,8 @@ Default: 1
 --- 03 SHADOWS
 
 --- 04 BORDER-RADIUS
+
+Default: 9px
 
 --- 05 WHITESPACE
 
@@ -47,19 +54,9 @@ body {
   color: #555;
 }
 
-.section-hero {
-  background-color: #fae5d3;
-  padding: 9.6rem 0;
-}
-
-.hero {
-  max-width: 130rem;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 9.6rem;
-  align-items: center;
-}
+/* ************************* */
+/* GENERAL REUSABLE COMPONENTS */
+/* ************************* */
 
 .heading-primary {
   font-size: 5.2rem;
@@ -68,12 +65,6 @@ body {
   color: #333;
   letter-spacing: -0.5px;
   margin-bottom: 3.2rem;
-}
-
-.hero-description {
-  font-size: 2rem;
-  line-height: 1.6;
-  margin-bottom: 4.8rem;
 }
 
 .btn:link,
@@ -110,12 +101,92 @@ body {
   box-shadow: inset 0 0 0 3px #fff;
 }
 
-.hero-img {
-  width: 100%;
-}
-
 .margin-right-sm {
   margin-right: 1.6rem;
+}
+
+/* ************************* */
+/* HEADER */
+/* ************************* */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+/* ************************* */
+/* NAVIGATION */
+/* ************************* */
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
+}
+
+/* ************************* */
+/* HERO SECTION */
+/* ************************* */
+
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  width: 100%;
 }
 
 .delivered-meals {
