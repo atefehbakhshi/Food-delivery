@@ -64,6 +64,9 @@ html {
   /* 10px / 16px */
   font-size: 62.5%;
   overflow-x: hidden;
+
+  /* Does NOT work on Safari */
+  /* scroll-behavior: smooth; */
 }
 
 body {
