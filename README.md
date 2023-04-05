@@ -4,7 +4,7 @@
 </br><h2></h2></br>
 <strong>Project Images </strong>
 </br>
-| Hero | Hoe it work | Meals |
+| Hero | Hoe it works | Meals |
 |--|--|--|
 | <kbd><img src="https://github.com/atefehbakhshi/Food-delivery/blob/master/img/git/hero.PNG" width=250px ></kbd> | <kbd><img src="https://github.com/atefehbakhshi/Food-delivery/blob/master/img/git/how-work.PNG" width=250px ></kbd> | <kbd><img src="https://github.com/atefehbakhshi/Food-delivery/blob/master/img/git/meals.PNG" width=250px ></kbd> |
 
